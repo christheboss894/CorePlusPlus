@@ -6,7 +6,7 @@ data:extend(
     icon = "__base__/graphics/icons/crude-oil.png",
     icon_size = 32,
     flags = {"placeable-neutral"},
-    category = "basic-fluid",
+    category = "basic-gas",
     order="a-b-a",
     infinite = true,
     highlight = true,
