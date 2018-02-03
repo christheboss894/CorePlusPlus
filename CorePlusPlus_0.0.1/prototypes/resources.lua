@@ -1,6 +1,15 @@
 data:extend(
 {
   {
+    type = "resource-category",
+    name = "basic-gas"
+  },
+}
+)
+
+data:extend(
+{
+  {
     type = "resource",
     name = "natural-gas",
     icon = "__base__/graphics/icons/crude-oil.png",
