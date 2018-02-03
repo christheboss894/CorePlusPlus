@@ -6,7 +6,21 @@ data:extend(
   },
 }
 )
-
+data:extend(
+{
+  {
+    type = "noise-layer",
+    name = "natural-gas"
+  },
+  {
+    type = "autoplace-control",
+    name = "natural-gas",
+    richness = true,
+    order = "b-a",
+    category = "resource",
+  },
+}
+)
 data:extend(
 {
   {
@@ -47,17 +61,17 @@ data:extend(
     autoplace =
     {
       order = "b",
-      control = "crude-oil",
+      control = "natural-gas",
       sharpness = 0.99,
-      max_probability = 0.02,
+      max_probability = 0.15,
       richness_base = 240000,
       richness_multiplier = 300000,
       richness_multiplier_distance_bonus = 1500,
-      coverage = 0.001 / 3,
+      coverage = 0.001 / 5,
       peaks =
       {
         {
-          noise_layer = "crude-oil",
+          noise_layer = "natural-gas",
           noise_octaves_difference = -0.5,
           noise_persistence = 0.4,
         }
